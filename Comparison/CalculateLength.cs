@@ -36,6 +36,17 @@ namespace Comparison
             }
 
         }
+        public void glLine(double line1,double line2)
+        {
+            if (line1<line2 )
+            {
+                Console.WriteLine("line2 is greaterthan line1 ");
+            }
+            else
+            {
+                Console.WriteLine("line2 is lessthan line1");
+            }
+        }
     }
 }
 

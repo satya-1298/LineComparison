@@ -26,6 +26,7 @@ namespace Comparison
             CalculateLength clengths= new CalculateLength(3,4,5,6);
             double line2= clengths.calculate();
             clengths.Compare(line1,line2);
+            clengths.glLine(line1,line2);
         }
     }
 }
