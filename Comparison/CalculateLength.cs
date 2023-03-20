@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Comparison
 {
     public class CalculateLength
@@ -15,7 +14,6 @@ namespace Comparison
             this.x2 = x2;
             this.y1 = y1;
             this.y2 = y2;
-
         }
         public double calculate()
         {
@@ -23,30 +21,40 @@ namespace Comparison
             Console.WriteLine("the length is :" + length);
             return length;
         }
-        public void Compare(double line1,double line2)
+        public void Compare(double line1, double line2)
         {
-            
+
             if (line1.Equals(line2))
             {
                 Console.WriteLine("This two lines are equal");
             }
-            else 
+            else
             {
                 Console.WriteLine("two lines are not equal");
             }
 
         }
-        public void glLine(double line1,double line2)
+        public void glLine(double line1, double line2)
         {
-            if (line1<line2 )
+            if (line1 > line2)
             {
-                Console.WriteLine("line2 is greaterthan line1 ");
+                Console.WriteLine("line1 is greaterthan line2 ");
             }
             else
             {
-                Console.WriteLine("line2 is lessthan line1");
+                Console.WriteLine("line1 is lessthan line2");
+            }
+        }
+        public void method(double line1,double line2) 
+        {
+            if (line1.CompareTo(line2) < line2) 
+            {
+                Console.WriteLine("line1 is greater");
+            }
+            else
+            {
+                Console.WriteLine("line2 is greater");
             }
         }
     }
 }
-

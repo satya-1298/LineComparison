@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
 namespace Comparison
 {
     public class Program
@@ -22,11 +21,12 @@ namespace Comparison
             int y2 = Convert.ToInt32(Console.ReadLine());
             CalculateLength clength = new CalculateLength(x1, x2, y1, y2);
             clength.calculate();
-            double line1= clength.calculate();
-            CalculateLength clengths= new CalculateLength(3,4,5,6);
-            double line2= clengths.calculate();
-            clengths.Compare(line1,line2);
-            clengths.glLine(line1,line2);
+            double line1 = clength.calculate();
+            CalculateLength clengths = new CalculateLength(3, 4, 5, 6);
+            double line2 = clengths.calculate();
+            clengths.Compare(line1, line2);
+            clengths.glLine(line1, line2);
+            clengths.method(line1, line2);
         }
     }
 }
